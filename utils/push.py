@@ -5,6 +5,6 @@ def push(url, item):
         data = "{} posted a new video: {}".format(item["author"]["name"], item["video"]["title"]).encode("utf-8"),
         headers = {
             "Title": item["video"]["title"].encode("utf-8"),
-            "Icon": item["video"]["thumbnail"],
+            "Attach": item["video"]["thumbnail"],
             "Click": item["video"]["url"]
         })
